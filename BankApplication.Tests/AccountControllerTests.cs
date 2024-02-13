@@ -96,7 +96,7 @@ namespace BankApplication.Tests
         }
 
         [TestMethod]
-        public async Task CreateAccount_RepositoryException_ReturnsInternalServerError()
+        public async Task CreateAccount_ServiceException_ReturnsInternalServerError()
         {
             // Arrange
             var accountCreationDto = new AccountCreationDTO
